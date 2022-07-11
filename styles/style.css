@@ -8,12 +8,6 @@ img {
 p::first-letter, h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, h5::first-letter, h6::first-letter {
   text-transform: uppercase; }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden; }
-
 body {
   background-color: #F5F5F5;
   top: 0 !important; }
@@ -160,6 +154,8 @@ header {
     right: -23rem;
     top: 0;
     background-color: #191919; }
+    header .small-menu .language-small-menu {
+      display: none; }
     header .small-menu span {
       color: grey;
       padding: 1rem;
@@ -822,16 +818,33 @@ footer {
   body {
     overflow-x: hidden !important; }
 
-  h1 {
-    margin-top: 5rem; }
+  .language-header {
+    display: none; }
+
+  .language-small-menu {
+    display: block !important; }
+
+  .language-dropdown-menu {
+    display: block;
+    margin-top: 3px;
+    color: white;
+    background-color: #292b33;
+    margin-left: 1rem; }
 
   #dropdownMenuButton {
-    position: absolute;
-    right: 0;
-    top: 3rem; }
+    margin-top: 1rem;
+    border: none;
+    margin-left: 1rem;
+    background-color: #292b33;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative; }
 
   .logo {
     min-width: 7rem; }
+
+  .menu-section {
+    justify-content: flex-end !important; }
 
   .info div img {
     margin-bottom: -3rem;
@@ -845,12 +858,12 @@ footer {
   .small-menu .more-menu {
     display: none; }
   .small-menu .more-menu-btn {
-    top: -2.2rem; }
+    top: -1.9rem; }
   .small-menu li {
-    padding-top: 0.3rem !important;
-    padding-bottom: 0.3rem !important; }
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important; }
   .small-menu .more-menu {
-    margin-top: 0.3rem; }
+    margin-top: 0.4rem; }
 
   .types-catalog a {
     min-width: 100%;
@@ -862,19 +875,7 @@ footer {
     min-width: 100% !important;
     min-height: 100% !important; }
     .types-catalog .type-el p {
-      font-size: 17px !important; }
-
-  .machine-img {
-    margin-top: 2rem; }
-
-  .inter-header h1 {
-    margin-top: 3rem; }
-
-  .gallery {
-    margin-top: 5rem; }
-
-  .more-history h1 {
-    margin-top: -1rem !important; } }
+      font-size: 17px !important; } }
 @media (max-width: 330px) {
   .fast-connection {
     display: block; }

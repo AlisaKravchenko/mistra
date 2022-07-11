@@ -51,11 +51,8 @@ menuOpen.addEventListener('click', function(){
         smallMenu.style.right = '0'
         smallMenu.classList.add('animate_animated', 'animate_fadeInRight')
     }, 0)
-    // element.onmousewheel = function () {
     document.body.style.overflowY = 'hidden';
     document.body.style.position = 'fixed';
-// };
-
 })
 menuClose.addEventListener('click', function(){
     smallMenu.style.right = '-23rem'
@@ -103,7 +100,6 @@ moreMenu.addEventListener('mouseleave', () => {
 //menu dropdown
 const productDropdownBtn = document.querySelector('.menu-product-catalog')
 const productDropdownMenu = document.querySelector('.product-dropdown-menu')
-// const allMenuProductCatalog = document.querySelector('.menu-product-catalog')
 let menuFlag = false
 productDropdownBtn.addEventListener('mouseenter', () => {
     productDropdownMenu.style.display = 'block'
@@ -132,16 +128,12 @@ productDropdownMenu.addEventListener('mouseleave', (e) => {
 
 const languageDropdownMenu = document.querySelector('.language-dropdown-menu')
 const languageDropdownBtn = document.querySelector('#dropdownMenuButton')
+console.log(languageDropdownBtn);
 let languageMenuFlag = false
 languageDropdownBtn.addEventListener('mouseenter', () => {
-    // if (languageDropdownMenu.style.display === 'block'){
-    //     languageDropdownMenu.style.display = 'none'
-    // } else {
-    //     languageDropdownMenu.style.display = 'block'
-    // }
     languageDropdownMenu.style.display = 'block'
-    // languageDropdownMenu.style.position = 'absolute'
 })
+
 languageDropdownMenu.addEventListener('mouseenter', () => {
     languageMenuFlag = true
     languageDropdownMenu.style.display = 'block'
@@ -150,12 +142,7 @@ languageDropdownMenu.addEventListener('mouseenter', () => {
 languageDropdownMenu.addEventListener('mouseleave', () => {
     languageMenuFlag = false
     languageDropdownMenu.style.display = 'none'
-    // languageDropdownMenu.style.position = 'absolute'
 })
-// languageDropdownBtn.addEventListener('mouseleave', () => {
-//     languageDropdownMenu.style.display = 'none'
-//     // languageDropdownMenu.style.position = 'absolute'
-// })
 languageDropdownBtn.addEventListener('focusout', () => {
     languageDropdownBtn.style.backgroundColor = '$blue'
 })

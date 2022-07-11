@@ -63,7 +63,7 @@ HEADER.innerHTML = `
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="language wow animate__animated animate__fadeInRight">
+                    <div class="language language-header wow animate__animated animate__fadeInRight">
                         <div class="dropdown language-dropdown">
                             <button
                                 class="btn btn-secondary dropdown-toggle"
@@ -129,7 +129,40 @@ HEADER.innerHTML = `
                                 <li><a href="services.html">Услуги</a></li>
                                 <li><a href="about-company.html">О компании</a></li>
                                 <li><a href="contacts.html">Контакты</a></li>
+                                
                             </ul>
+                            <div class="language language-small-menu wow animate__animated animate__fadeInRight">
+                                <div class="dropdown language-dropdown">
+                                    <button
+                                        class="btn btn-secondary dropdown-toggle"
+                                        type="button"
+                                        id="dropdownMenuButton"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        Выберите язык
+                                    </button>
+                                    <div
+                                        class="dropdown-menu language-dropdown-menu"
+                                        aria-labelledby="dropdownMenuButton"
+                                    >
+                                        <p data-google-lang="cs">Чешский<img src="img/translate-flags/lang__cz.png"></img></p>
+                                        <p data-google-lang="ar">Арабский<img src="img/translate-flags/lang__ar.png"></img></p>
+                                        <p data-google-lang="de">Немецкий<img src="img/translate-flags/lang__de.png"></img></p>
+                                        <p data-google-lang="en">Английский<img src="img/translate-flags/lang__en.png"></img></p>
+                                        <p data-google-lang="es">Испанский<img src="img/translate-flags/lang__es.png"></img></p>
+                                        <p data-google-lang="fr">Французский<img src="img/translate-flags/lang__fr.png"></img></p>
+                                        <p data-google-lang="it">Итальянский<img src="img/translate-flags/lang__it.png"></img></p>
+                                        <p data-google-lang="nl">Нидерландский<img src="img/translate-flags/lang__nl.png"></img></p>
+                                        <p data-google-lang="pt">Португальский<img src="img/translate-flags/lang__pt.png"></img></p>
+                                        <p data-google-lang="ru">Русский<img src="img/translate-flags/lang__ru.png"></img></p>
+                                        <p data-google-lang="sv">Шведский<img src="img/translate-flags/lang__sv.png"></img></p>
+                                        <!-- <p data-google-lang="zh">Китайский<img src="img/translate-flags/lang__zh.png"></img></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>

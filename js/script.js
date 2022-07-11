@@ -53,12 +53,14 @@ menuOpen.addEventListener('click', function(){
     }, 0)
     // element.onmousewheel = function () {
     document.body.style.overflowY = 'hidden';
+    document.body.style.position = 'fixed';
 // };
 
 })
 menuClose.addEventListener('click', function(){
     smallMenu.style.right = '-23rem'
     document.body.style.overflowY = 'scroll';
+    document.body.style.position = 'static';
     smallMenu.classList.add('animate_animated', 'animate_fadeOutRight')
     setTimeout(() => {
         smallMenuWrap.style.display = 'none'
@@ -159,12 +161,10 @@ languageDropdownBtn.addEventListener('focusout', () => {
 })
 languageDropdownBtn.addEventListener('mouseleave', () => {
     setTimeout(() => {
-        console.log(languageMenuFlag);
         if (!languageMenuFlag){
             languageMenuFlag = false
             languageDropdownMenu.style.display = 'none'
             languageDropdownBtn.style.color = '$bg-black'
-            languageDropdownBtn.style.backgroundColor = '#fff !important'
         }
     }, 100)
     

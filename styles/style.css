@@ -8,6 +8,10 @@ img {
 p::first-letter, h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter, h5::first-letter, h6::first-letter {
   text-transform: uppercase; }
 
+html,
+body {
+  overflow-x: hidden; }
+
 body {
   background-color: #F5F5F5;
   top: 0 !important; }
@@ -799,6 +803,12 @@ footer {
 @media (max-width: 720px) {
   .main-page-cards {
     display: block; } }
+@media (max-width: 592px) {
+  .slick-prev:before {
+    display: none; }
+
+  .slick-next:before {
+    display: none; } }
 @media (max-width: 551px) {
   .welcome .intro {
     font-size: 50px;
@@ -882,5 +892,8 @@ footer {
     .fast-connection-head-wrap {
       display: flex;
       justify-content: center; } }
+@media (max-height: 800px) {
+  .small-menu {
+    overflow-y: scroll; } }
 
 /*# sourceMappingURL=style.css.map */

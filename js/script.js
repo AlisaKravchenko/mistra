@@ -128,7 +128,6 @@ productDropdownMenu.addEventListener('mouseleave', (e) => {
 
 const languageDropdownMenu = document.querySelector('.language-dropdown-menu')
 const languageDropdownBtn = document.querySelector('#dropdownMenuButton')
-console.log(languageDropdownBtn);
 let languageMenuFlag = false
 languageDropdownBtn.addEventListener('mouseenter', () => {
     languageDropdownMenu.style.display = 'block'

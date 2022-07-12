@@ -35,7 +35,7 @@ const menuOpen = document.querySelector('#small-menu-open')
 const smallMenu = document.querySelector('.small-menu')
 const menuClose = document.querySelector('#small-menu-close')
 const smallMenuWrap = document.querySelector('.small-menu-wrap')
-
+const welcome = document.querySelector('.welcome')
 const typesCatalog = document.querySelector('.types-catalog')
 let typesCatalogA = []
 if (typesCatalog){
@@ -44,6 +44,7 @@ if (typesCatalog){
 
 menuOpen.addEventListener('click', function(){
     smallMenuWrap.style.display = 'block'
+    welcome.style.zIndex = '-1'
     typesCatalogA.forEach(el => {
         el.style.zIndex = '-1'
     })
@@ -61,10 +62,12 @@ menuClose.addEventListener('click', function(){
     smallMenu.classList.add('animate_animated', 'animate_fadeOutRight')
     setTimeout(() => {
         smallMenuWrap.style.display = 'none'
+        welcome.style.zIndex = '0'
         typesCatalogA.forEach(el => {
             el.style.zIndex = '0'
         })
     }, 400)
+    
     
     
 })

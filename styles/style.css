@@ -864,15 +864,17 @@ footer {
     .writing :first-child {
       margin-bottom: 1rem; }
 
-  .small-menu .more-menu {
-    display: none; }
-  .small-menu .more-menu-btn {
-    top: -1.9rem; }
-  .small-menu li {
-    padding-top: 0.4rem !important;
-    padding-bottom: 0.4rem !important; }
-  .small-menu .more-menu {
-    margin-top: 0.4rem; }
+  .small-menu {
+    min-width: 18rem !important; }
+    .small-menu .more-menu {
+      display: none; }
+    .small-menu .more-menu-btn {
+      top: -1.9rem; }
+    .small-menu li {
+      padding-top: 0.4rem !important;
+      padding-bottom: 0.4rem !important; }
+    .small-menu .more-menu {
+      margin-top: 0.4rem; }
 
   .types-catalog a {
     min-width: 100%;

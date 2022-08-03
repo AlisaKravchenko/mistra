@@ -4,7 +4,6 @@ const moreHistoryBtn = document.querySelector('#more-history')
 const history = document.querySelector('.more-history')
 if (moreHistoryBtn) {
     moreHistoryBtn.addEventListener('click', function(){
-        console.log('a');
         history.style.display = 'block'
     }, {passive: true})
 } 
@@ -44,7 +43,7 @@ if (typesCatalog){
 
 menuOpen.addEventListener('click', function(){
     smallMenuWrap.style.display = 'block'
-    welcome.style.zIndex = '-1'
+    if (welcome) welcome.style.zIndex = '-1'
     container.style.zIndex = '-1'
     typesCatalogA.forEach(el => {
         el.style.zIndex = '-1'
@@ -64,7 +63,7 @@ menuClose.addEventListener('click', function(){
     setTimeout(() => {
         smallMenuWrap.style.display = 'none'
          container.style.zIndex = '0'
-        welcome.style.zIndex = '0'
+        if (welcome) welcome.style.zIndex = '0'
         typesCatalogA.forEach(el => {
             el.style.zIndex = '0'
         })

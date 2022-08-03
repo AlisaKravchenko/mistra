@@ -391,7 +391,8 @@ footer {
   .about-company div {
     margin-top: 2rem;
     z-index: -1;
-    position: relative; }
+    position: relative;
+    padding-left: 0; }
   .about-company .history-section {
     z-index: 0;
     position: static; }
